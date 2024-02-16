@@ -249,25 +249,112 @@ Instrukcje SQL z tych różnych grup pozwalają na kompleksowe zarządzanie baza
 
 8.Współbieżne wykonanie operacji na bazie danych może prowadzić do różnych problemów, zwłaszcza gdy wiele operacji jest wykonywanych jednocześnie przez wielu użytkowników. Oto kilka potencjalnych problemów związanych ze współbieżnym wykonaniem operacji na bazie danych, oraz ocena zjawisk niepożądanych:
 
-    Zatkanie się (Deadlock):
+    - Zatkanie się (Deadlock):
         Deadlock występuje, gdy dwa lub więcej procesów oczekuje na zasoby, które są zablokowane przez inne procesy. W efekcie żaden z procesów nie może kontynuować działania, co prowadzi do zatrzymania działania aplikacji.
         Ocena: Deadlocki są niepożądane, ponieważ prowadzą do zablokowania zasobów i uniemożliwiają dalsze działanie aplikacji. Mogą być trudne do wykrycia i rozwiązania.
 
-    Konflikty zasobów (Resource contention):
-        Konflikty zasobów mogą wystąpić, gdy wiele operacji próbuje uzyskać dostęp do tych samych zasobów jednocześnie. Na przykład, gdy dwie transakcje próbują zaktualizować tę samą tabelę jednocześnie.
-        Ocena: Konflikty zasobów mogą prowadzić do opóźnień i spowolnienia wykonywania operacji w bazie danych. Mogą również zwiększać zużycie zasobów systemowych.
+    - Konflikty dostępu: 
+        Gdy dwie lub więcej operacji próbuje jednocześnie modyfikować te same dane, może dojść do konfliktu. Przykładem może być sytuacja, gdy dwie osoby próbują jednocześnie wypłacić pieniądze z tego samego konta bankowego1.
 
-    Zagubienie aktualizacji (Lost updates):
-        Zagubienie aktualizacji występuje, gdy dwie lub więcej operacji próbuje zmodyfikować tę samą dane jednocześnie, a jedna z tych operacji zostaje utracona lub nadpisana przez drugą.
-        Ocena: Zagubienie aktualizacji prowadzi do utraty danych i może prowadzić do nieprawidłowych wyników lub błędów w aplikacji.
+    - Niespójność danych:
+         Jeśli operacje są wykonywane w sposób niekontrolowany, może dojść do niespójności danych. Na przykład, jeśli operacja przeniesienia pieniędzy z jednego konta na drugie jest przerywana po odjęciu kwoty z jednego konta, ale przed dodaniem jej do drugiego, dane stają się niespójne1.
 
-    Brak izolacji (Lack of isolation):
-        Brak izolacji może wystąpić, gdy jedna transakcja oczekuje na zakończenie innej transakcji, co prowadzi do zablokowania zasobów i spowolnienia wykonywania operacji.
-        Ocena: Brak izolacji może prowadzić do wydłużenia czasu odpowiedzi dla użytkowników oraz spadku wydajności aplikacji.
-
-    Wpływ na spójność danych (Data inconsistency):
-        Wpływ na spójność danych może wystąpić, gdy współbieżne operacje prowadzą do nieprawidłowych lub sprzecznych danych w bazie danych.
-        Ocena: Nieprawidłowe dane mogą prowadzić do błędnych decyzji biznesowych i nieprawidłowego zachowania aplikacji.
+    - Problemy z izolacją:
+         Jeśli operacje nie są odpowiednio izolowane, efekty jednej operacji mogą być widoczne dla innej przed jej zakończeniem. To może prowadzić do nieprawidłowych wyników
 
 Wszystkie te problemy mogą prowadzić do niestabilności, spadku wydajności i błędów w aplikacji. Dlatego ważne jest, aby projektować systemy bazodanowe z myślą o obsłudze współbieżnych operacji i stosować odpowiednie mechanizmy, takie jak blokady, transakcje izolacyjne oraz monitorowanie wydajności, aby minimalizować ryzyko wystąpienia tych problemów.
 
+## Proszę opisać podstawowe topologie sieci komputerowych.
+
+- Topologia magistrali (Bus): 
+
+    Wszystkie urządzenia są podłączone do wspólnego medium transmisyjnego1. Jest to topologia prosta i tania, ale niewielka przepustowość i podatność na awarie mogą stanowić problem
+
+    ![Alt text](https://th.bing.com/th/id/R.59a5cd1a502f004ce4eeb7100b14e16d?rik=FatFyB8YOZ2kAw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-EMcJAmJoYXg%2fUFUf41vsluI%2fAAAAAAAAADc%2fAYb_BCp28oU%2fs400%2fmagistrala.jpeg&ehk=OSXqipdC49rKWkz8PhajhLKzIrZysASnskyWKH5hInw%3d&risl=&pid=ImgRaw&r=0)
+
+- Topologia liniowa: 
+
+    Odmiana topologii magistrali, w której     każdy element sieci (oprócz granicznych) połączony jest dokładnie z dwoma sąsiadującymi elementami
+
+    ![Alt text](https://upload.wikimedia.org/wikipedia/commons/4/4a/Liniowa.jpeg)
+
+- Topologia pierścienia:
+
+    Poszczególne elementy są połączone ze sobą w taki sposób jak w topologii liniowej, a dodatkowo połączone zostały elementy graniczne tworząc zamknięty pierścień
+
+    ![alt text](https://upload.wikimedia.org/wikipedia/commons/b/b1/Pierscien.jpeg)
+
+- Topologia gwiazdy:
+
+    Elementy końcowe są podłączone do jednego punktu centralnego, koncentratora lub przełącznika
+
+    ![alt text](https://upload.wikimedia.org/wikipedia/commons/a/a3/Gwiazda.jpeg)
+- Topologia siatki: 
+
+    Elementy łączą się bezpośrednio, dynamicznie i niehierarchicznie z jak największą liczbą innych elementów i współpracują ze sobą w celu efektywnego trasowania danych
+
+    ![alt text](https://upload.wikimedia.org/wikipedia/commons/b/b6/Siatka.jpeg)
+
+## Definicja i funkcje protokołu komunikacyjnego. Proszę dokonać przeglądu najczęściej używanych protokołów komunikacyjnych
+
+Protokół komunikacyjny to zbiór ścisłych reguł oraz kroków postępowania, które są automatycznie wykonywane przez urządzenia komunikacyjne w celu nawiązania łączności i wymiany danych. W telekomunikacji, protokół komunikacyjny jest systemem regulacji, które umożliwiają dwóm lub więcej jednostkom systemu komunikacji do przesyłania informacji różnego typu fizycznej jakości. Regulacje te (standardy) definiują składnię, semantykę, synchronizację komunikacji oraz możliwe metody naprawiania błędów. Protokoły te mogą zostać wdrożone za pomocą sprzętu, oprogramowania lub obu naraz.
+
+Najczęściej używane protokoły komunikacyjne to:
+
+1. **TCP/IP** (Transmission Control Protocol / Internet Protocol) - to zespół protokołów sieciowych używany w sieci Internet⁵.
+2. **HTTP** (HyperText Transfer Protocol) - protokół przesyłania dokumentów hipertekstowych, najczęściej stosowany do przesyłania danych przez stronę internetową.
+3. **FTP** (File Transfer Protocol) - protokół służący do przesyłania plików w sieciach TCP/IP.
+4. **DNS** (Domain Name System) - protokół używany do tłumaczenia nazw domen na adresy IP.
+5. **SSH** (Secure Shell) - protokół służący do zdalnego logowania do systemu.
+6. **IMAP** (Internet Message Access Protocol) - protokół służący do zarządzania pocztą elektroniczną.
+7. **SMTP** (Simple Mail Transfer Protocol) - protokół służący do przesyłania poczty elektronicznej.
+8. **POP3** (Post Office Protocol version 3) - protokół służący do odbierania poczty elektronicznej.
+9. **HTTPS** (HTTP Secure) - protokół służący do bezpiecznej komunikacji przez sieć.
+
+
+## Proszę scharakteryzować architekturę klient-serwer oraz podać przykłady realizacji
+
+
+Architektura klient-serwer to model komunikacji między systemami komputerowymi, w którym jeden system (klient) żąda zasobów lub usług od innego systemu (serwera). Klient jest odpowiedzialny za inicjowanie żądań, a serwer odpowiada na te żądania, dostarczając żądane zasoby lub usługi. Architektura klient-serwer jest powszechnie stosowana w systemach informatycznych, w tym w aplikacjach internetowych, bazach danych, serwerach plików i wielu innych.
+
+Strona klienta jest stroną żądającą dostępu do danej usługi lub zasobu. Tryb pracy klienta jest aktywny, wysyła żądanie do serwera i oczekuje na odpowiedź od serwera.
+
+Strona serwera jest stroną świadczącą usługę lub udostępniającą zasoby. Tryb pracy serwera jest pasywny, czeka na żądania od klientów, a w momencie otrzymania żądania, przetwarza je, a następnie wysyła odpowiedź
+
+Przykłady realizacji architektury klient-serwer to:
+
+    Serwer poczty elektronicznej
+    Serwer WWW
+    Serwer plików
+    Serwer aplikacji
+    Większość obecnie spotykanych systemów zarządzania bazą danych
+    Gry online
+
+## Najczęściej spotykane typy zagrożeń bezpieczeństwa sieciowego. Proszę podać metody zapobiegania.
+Oto kilka najczęściej spotykanych typów zagrożeń bezpieczeństwa sieciowego oraz metody zapobiegania:
+
+    Ataki hakerskie:
+        Zagrożenia: Hakerzy mogą próbować nieautoryzowanego dostępu do systemów, kradzieży danych, sabotowania usług lub wykorzystywania systemów do własnych celów.
+        Zapobieganie: Regularna aktualizacja oprogramowania, zastosowanie silnych haseł, konfiguracja zabezpieczeń sieciowych, wykorzystanie systemów detekcji i reakcji na incydenty (IDS/IPS), firewalli, VPN, autoryzacja wieloskładnikowa.
+
+    Malware:
+        Zagrożenia: Złośliwe oprogramowanie, takie jak wirusy, trojany, ransomware, mogą infekować systemy, kradnąc dane, szpiegując użytkowników, przeszkadzając w działaniu lub blokując dostęp do zasobów.
+        Zapobieganie: Instalacja antywirusów i oprogramowania anty-malware, regularne skanowanie systemów, unikanie klikania w podejrzane linki i pobierania nieznanych plików, aktualizacja oprogramowania.
+
+    Phishing:
+        Zagrożenia: Atakujący podszywa się pod zaufane źródło (np. bank, firma) i próbuje uzyskać poufne informacje od użytkowników, takie jak hasła, numery kart kredytowych, czy dane osobowe.
+        Zapobieganie: Edukacja użytkowników w zakresie rozpoznawania phishingu, ostrożność przy otwieraniu załączników i klikaniu w linki w e-mailach, stosowanie filtrów antyspamowych, używanie autoryzacji dwuetapowej.
+
+    Ataki DDoS (Distributed Denial of Service):
+        Zagrożenia: Atakujący wysyła ogromną ilość żądań do serwera lub sieci, powodując przeciążenie i uniemożliwiając normalne funkcjonowanie.
+        Zapobieganie: Używanie firewalli, systemów IDS/IPS, ograniczanie dostępu do usług tylko dla zaufanych adresów IP, zastosowanie rozproszonych systemów CDN, regularne monitorowanie ruchu sieciowego.
+
+    Wycieki danych:
+        Zagrożenia: Nieautoryzowane ujawnienie poufnych danych, takich jak dane klientów, informacje finansowe lub tajemnice handlowe, może prowadzić do szkód finansowych, utraty reputacji i naruszenia przepisów prawnych.
+        Zapobieganie: Zabezpieczenie danych za pomocą szyfrowania, ograniczenie dostępu do danych tylko dla uprawnionych użytkowników, regularne audyty bezpieczeństwa, stosowanie polityk bezpieczeństwa informacji.
+
+    Ataki z wykorzystaniem słabych konfiguracji:
+        Zagrożenia: Atakujący mogą wykorzystać słabe hasła, niewłaściwie skonfigurowane serwery, niezaktualizowane oprogramowanie do uzyskania dostępu do systemów lub danych.
+        Zapobieganie: Regularna zmiana i stosowanie silnych haseł, aktualizacja oprogramowania i systemów operacyjnych, konfiguracja zabezpieczeń sieciowych, stała kontrola i analiza logów systemowych.
+
+Ważne jest, aby stosować zróżnicowane metody i narzędzia zapobiegania, aby zminimalizować ryzyko wystąpienia zagrożeń bezpieczeństwa sieciowego. Regularne szkolenia pracowników w zakresie bezpieczeństwa cybernetycznego oraz monitorowanie i reagowanie na incydenty są również kluczowe dla skutecznej ochrony sieci.
