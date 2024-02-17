@@ -358,3 +358,300 @@ Oto kilka najczęściej spotykanych typów zagrożeń bezpieczeństwa sieciowego
         Zapobieganie: Regularna zmiana i stosowanie silnych haseł, aktualizacja oprogramowania i systemów operacyjnych, konfiguracja zabezpieczeń sieciowych, stała kontrola i analiza logów systemowych.
 
 Ważne jest, aby stosować zróżnicowane metody i narzędzia zapobiegania, aby zminimalizować ryzyko wystąpienia zagrożeń bezpieczeństwa sieciowego. Regularne szkolenia pracowników w zakresie bezpieczeństwa cybernetycznego oraz monitorowanie i reagowanie na incydenty są również kluczowe dla skutecznej ochrony sieci.
+
+## Proszę wymienić obecnie stosowane metody szyfrowania danych
+### Tutaj, jeżeli mialbym na czymś polegać to RSA/TLS/SSL/HTTPS/PGP
+Oto kilka obecnie stosowanych metod szyfrowania danych:
+
+    AES (Advanced Encryption Standard):
+        Jest to symetryczny algorytm szyfrowania, który jest powszechnie stosowany do szyfrowania danych, takich jak wiadomości e-mail, dane transakcyjne i pliki. AES jest uważany za bardzo bezpieczny i wydajny.
+
+    RSA (Rivest-Shamir-Adleman):
+        Jest to asymetryczny algorytm szyfrowania, który wykorzystuje klucze publiczne i prywatne do szyfrowania i deszyfrowania danych. RSA jest szeroko stosowany do bezpiecznej wymiany kluczy oraz podpisywania i weryfikowania cyfrowych.
+
+    DES (Data Encryption Standard) i 3DES (Triple DES):
+        DES był standardem szyfrowania danych, ale obecnie jest uważany za przestarzały z uwagi na krótki klucz (56 bitów). 3DES jest ulepszoną wersją DES, która stosuje proces szyfrowania DES trzykrotnie. Choć 3DES jest nadal używany, zaleca się stopniową migrację na bardziej zaawansowane algorytmy.
+
+    Blowfish i Twofish:
+        Są to symetryczne algorytmy szyfrowania opracowane jako alternatywa dla DES. Są one stosowane do szyfrowania danych na różnych platformach i są uznawane za bezpieczne.
+
+    ECC (Elliptic Curve Cryptography):
+        Jest to rodzaj asymetrycznego algorytmu szyfrowania, który wykorzystuje krzywe eliptyczne do generowania kluczy kryptograficznych. ECC jest znany ze swojej wydajności i stosunkowo krótkich kluczy.
+
+    TLS (Transport Layer Security) i SSL (Secure Sockets Layer):
+        Są to protokoły szyfrowania stosowane do bezpiecznej transmisji danych przez sieci, takie jak internet. Wykorzystują one różne algorytmy szyfrowania, w tym AES i RSA, do zapewnienia poufności i integralności danych.
+
+    PGP (Pretty Good Privacy) i GPG (GnuPG):
+        Są to narzędzia do szyfrowania danych, zwłaszcza e-maili. Wykorzystują one kombinację symetrycznego i asymetrycznego szyfrowania do zapewnienia bezpieczeństwa w komunikacji e-mailowej.
+
+    ChaCha20:
+        Jest to szybki i bezpieczny algorytm szyfrowania stosowany w wielu aplikacjach, takich jak komunikatory internetowe i VPN.
+
+Te metody szyfrowania danych stosowane są w różnych aplikacjach i systemach w celu zapewnienia poufności, integralności i bezpieczeństwa danych. Wybór odpowiedniego algorytmu szyfrowania zależy od konkretnych wymagań bezpieczeństwa oraz wydajności danego systemu.
+
+
+
+## Proszę przedstawić zasadę działania komputera oraz funkcje zespołów bazowych.
+
+Komputer to urządzenie elektroniczne, które przetwarza dane zgodnie z określonym programem. Działa na podstawie danych i instrukcji, które są wprowadzane do niego. Dane to konkretne informacje, takie jak pliki, zdjęcia i filmy. Instrukcje to polecenia, które mówią komputerowi, co ma robić. Komputer przetwarza te dane i instrukcje, aby wykonywać różne zadania.
+
+Podstawowe zespoły bazowe komputera to:
+
+1. **Procesor (CPU)**: Jest to rodzaj mikroprocesora, który wykonuje wszystkie obliczenia i operacje na danych. Procesor składa się z wielu milionów tranzystorów, które pracują na podstawie sygnałów elektrycznych.
+2. **Pamięć RAM**: Przechowuje tymczasowe dane, które są aktualnie używane przez programy.
+3. **Dysk twardy**: Magazynuje długoterminowe dane, takie jak pliki i aplikacje.
+4. **Karta graficzna**: Odpowiedzialna za przetwarzanie grafiki i wyświetlanie obrazu na monitorze.
+5. **Płyta główna**: Podstawowa płyta obwodów, na której montowane są pozostałe komponenty. Płyta główna jest odpowiedzialna za łączenie wszystkich innych podzespołów komputera, takich jak procesor, pamięć RAM, karta graficzna, dyski twarde i inne urządzenia.
+6. **Zasilacz**: Dostarcza energię elektryczną do wszystkich komponentów komputera.
+7. **System operacyjny**: Oprogramowanie, które zarządza sprzętem komputera i umożliwia użytkownikom korzystanie z różnych funkcji i programów.
+
+Wszystkie te elementy są ze sobą połączone za pomocą przewodów, które przesyłają dane i zasilanie pomiędzy poszczególnymi komponentami
+
+## Sposoby współpracy komputera z urządzeniami wejścia/wyjścia
+
+Komputer współpracuje z urządzeniami wejścia/wyjścia (I/O) za pomocą różnych interfejsów i protokołów komunikacyjnych. Oto kilka sposobów, w jakie komputer może współpracować z urządzeniami wejścia/wyjścia:
+
+1. **Porty komunikacyjne:**
+   - Komputer może mieć różne porty komunikacyjne, takie jak porty USB, porty szeregowe (COM), porty równoległe (LPT), porty Ethernet czy porty audio. Urządzenia wejścia/wyjścia mogą być podłączane do tych portów za pomocą odpowiednich kabli i złączy.
+
+2. **Sterowniki urządzeń:**
+   - Komputer potrzebuje odpowiednich sterowników urządzeń, aby prawidłowo komunikować się z urządzeniami wejścia/wyjścia. Sterowniki te tłumaczą komunikaty i sygnały między komputerem a urządzeniem na zrozumiałe dla obu stron formy.
+
+3. **Interfejsy bezprzewodowe:**
+   - Komputer może współpracować z urządzeniami wejścia/wyjścia za pomocą interfejsów bezprzewodowych, takich jak Bluetooth, Wi-Fi czy NFC. Te interfejsy umożliwiają bezprzewodową transmisję danych między komputerem a urządzeniem.
+
+4. **Protokoły komunikacyjne:**
+   - Komputer może współpracować z urządzeniami wejścia/wyjścia za pomocą różnych protokołów komunikacyjnych, takich jak USB (Universal Serial Bus), HDMI (High-Definition Multimedia Interface), Ethernet, MIDI (Musical Instrument Digital Interface), czy też RS-232.
+
+5. **Przetwarzanie sygnałów wejściowych:**
+   - Komputer odbiera sygnały wejściowe od urządzeń wejścia, takich jak klawiatury, myszy, czy mikrofony, i przetwarza je na dane cyfrowe, które mogą być zrozumiałe dla programów i systemu operacyjnego.
+
+6. **Wysyłanie sygnałów wyjściowych:**
+   - Komputer przesyła sygnały wyjściowe do urządzeń wyjścia, takich jak monitory, drukarki, głośniki, czy też urządzenia zewnętrzne, aby wyświetlić informacje użytkownikowi lub wykonać określone czynności.
+
+7. **Obsługa wielu urządzeń jednocześnie:**
+   - Komputer może współpracować z wieloma urządzeniami wejścia/wyjścia jednocześnie, co umożliwia użytkownikom wykonywanie wielu zadań jednocześnie, takich jak pisanie na klawiaturze, przeglądanie internetu na monitorze i słuchanie muzyki na głośnikach, przy jednoczesnej obsłudze zewnętrznych urządzeń pamięci masowej czy drukowania.
+
+## Właściwości grafiki rastrowej i wektorowej.
+
+Grafika rastrowa (bitmapowa) i wektorowa to dwa główne rodzaje grafiki cyfrowej, z których każdy ma swoje charakterystyczne właściwości. Oto omówienie głównych właściwości każdego z tych rodzajów grafiki:
+Grafika rastrowa (bitmapowa):
+
+    Składanie pikseli: Grafika rastrowa składa się z pojedynczych pikseli, które tworzą obraz. Każdy piksel ma określoną wartość koloru i jest elementem siatki, której rozmiar definiuje rozdzielczość obrazu.
+
+    Rozdzielczość: Obrazy rastrowe są definiowane przez ich rozdzielczość, wyrażaną w liczbie pikseli na jednostkę długości (np. pikseli na cal lub pikseli na centymetr). Większa rozdzielczość oznacza więcej pikseli na jednostkę długości i zwykle lepszą jakość obrazu.
+
+    Skalowalność: Grafika rastrowa zazwyczaj ma ograniczoną skalowalność. Przy zmniejszaniu obrazu może występować utrata szczegółów, a przy powiększaniu obrazu może występować efekt rozmycia lub pikselizacji.
+
+    Formaty plików: Popularne formaty plików grafiki rastrowej to JPEG, PNG, GIF, BMP, TIFF itp. Każdy z tych formatów ma swoje własne cechy, takie jak kompresja stratna lub bezstratna, obsługa przezroczystości, czy też obsługa animacji.
+
+    Edycja obrazów: Programy do edycji grafiki rastrowej, takie jak Adobe Photoshop, GIMP, czy też Corel PaintShop Pro, umożliwiają edycję pikseli obrazu, w tym zmianę kolorów, dodawanie efektów, retuszowanie zdjęć itp.
+
+    Popularne formaty plików rastrowych: jpg, jpeg, png, tif, bmp, gif, ico, tga, pdf (ten format jest akurat
+    specyficzny, bo obsługuje również grafikę wektorową)
+
+Grafika wektorowa:
+
+    Opis kształtów: Grafika wektorowa opisuje obrazy za pomocą matematycznych równań i kształtów geometrycznych, takich jak linie, krzywe, okręgi, prostokąty itp.
+
+    Skalowalność: Grafika wektorowa jest idealnie skalowalna, ponieważ opiera się na matematycznych równaniach, a nie na pikselach. Może być powiększana lub pomniejszana bez utraty jakości i szczegółów.
+
+    Rozmiar plików: Pliki grafiki wektorowej są zazwyczaj mniejsze niż pliki grafiki rastrowej, ponieważ opisują kształty i linie za pomocą prostych równań matematycznych.
+
+    Edycja obrazów: Grafika wektorowa jest łatwa do edycji, ponieważ kształty i linie mogą być łatwo manipulowane. Programy do edycji grafiki wektorowej, takie jak Adobe Illustrator, CorelDRAW, czy też Inkscape, umożliwiają tworzenie i edycję obrazów wektorowych.
+
+    Zastosowania: Grafika wektorowa jest często stosowana w projektowaniu graficznym, projektowaniu stron internetowych, tworzeniu logo, ilustracji technicznych, czy też druku wielkoformatowym.
+
+    Popularne formaty plików wektorowych: ai, eps, svg, cdr, pdf (ten format jest akurat specyficzny, bo
+    obsługuje również grafikę rastrową)
+
+Podsumowując, grafika rastrowa i wektorowa mają swoje własne zastosowania i charakterystyczne właściwości, dlatego wybór jednego rodzaju grafiki nad drugim zależy od konkretnego zastosowania i wymagań projektowych.
+
+
+## Przykłady zastosowania grafiki komputerowej w aplikacjach użytkowych.
+1. **Edycja grafiki i projektowanie:**
+   - Programy do edycji grafiki, takie jak Adobe Photoshop, GIMP czy CorelDRAW, są wykorzystywane do tworzenia i edycji grafik, zdjęć, ilustracji, plakatów, broszur, ulotek, a także do projektowania logo, katalogów produktów czy materiałów reklamowych.
+
+2. **Prezentacje multimedialne:**
+   - Aplikacje do tworzenia prezentacji, takie jak Microsoft PowerPoint czy Keynote, pozwalają użytkownikom tworzyć dynamiczne prezentacje, wykorzystując grafikę, animacje, multimedia i efekty wizualne w celu przekazania informacji.
+
+3. **Modelowanie 3D:**
+   - W branży architektonicznej, inżynieryjnej, projektowania produktów, gier komputerowych i filmów animowanych wykorzystuje się oprogramowanie do modelowania 3D, takie jak Autodesk Maya, Blender czy Cinema 4D, do tworzenia realistycznych modeli trójwymiarowych.
+
+4. **Projektowanie stron internetowych:**
+   - Grafika komputerowa jest niezbędnym elementem przy projektowaniu interfejsów użytkownika i stron internetowych. Programy do projektowania stron, takie jak Adobe XD, Sketch czy Figma, umożliwiają projektowanie interaktywnych prototypów, wykorzystując grafikę, ikony, zdjęcia i inne elementy wizualne.
+
+5. **Edycja wideo:**
+   - Programy do edycji wideo, takie jak Adobe Premiere Pro, Final Cut Pro czy Davinci Resolve, wykorzystują grafikę komputerową do montażu filmów, dodawania efektów specjalnych, animacji, tytułów, przejść i innych elementów wideo.
+
+6. **Oprogramowanie CAD (Computer-Aided Design):**
+   - W branży inżynieryjnej, architektonicznej i projektowej wykorzystuje się oprogramowanie CAD, takie jak AutoCAD czy SolidWorks, do tworzenia precyzyjnych rysunków technicznych, modeli 3D i projektów konstrukcyjnych.
+
+7. **Systemy informacji geograficznej (GIS):**
+   - Grafika komputerowa jest wykorzystywana do tworzenia map, analiz przestrzennych, wizualizacji danych geograficznych i zarządzania danymi w systemach informacji geograficznej, takich jak ArcGIS czy QGIS.
+
+8. **Grafika medyczna:**
+   - W medycynie grafika komputerowa jest używana do tworzenia obrazów diagnostycznych, wizualizacji anatomicznych, symulacji medycznych, modelowania chorób i procedur chirurgicznych, a także do edukacji medycznej.
+
+9. **Grafika edukacyjna:**
+   - W edukacji grafika komputerowa jest wykorzystywana do tworzenia materiałów dydaktycznych, interaktywnych podręczników, animacji edukacyjnych, wirtualnych wycieczek, symulacji i gier edukacyjnych.
+
+## Zasady projektowania diagramów przepływu danych oraz tworzenia modeli związków encji.
+
+Wyjaśnienie zasad projektowania diagramów przepływu danych (DFD) oraz tworzenia modeli związków encji (ERM):
+#### Tu trzeba to ogarnąć o co chodzi tak naprawdę...
+### Zasady projektowania DFD:
+
+1. **Określ hierarchię:** DFD może być ogólny lub szczegółowy. Zacznij od ogólnego widoku, a następnie przejdź do szczegółów.
+
+2. **Rozdziel procesy od danych:** Oddziel procesy (czynności) od danych (informacji). Procesy to działania, które wykonuje system, a dane to informacje, które są przetwarzane.
+
+3. **Zidentyfikuj procesy:** Dokładnie opisz procesy, jakie system wykonuje, aby wyjaśnić, co robią i jak działają.
+
+4. **Pokazuj przepływ danych:** Strzałki na diagramie DFD pokazują, jakie dane są przetwarzane i jak przechodzą między procesami oraz innymi elementami systemu.
+
+5. **Unikaj powtórzeń:** Unikaj powtarzania tych samych procesów w różnych miejscach. To może prowadzić do zbędnej złożoności.
+
+### Zasady tworzenia modeli ERM:
+
+1. **Identyfikuj encje:** Encje to obiekty lub pojęcia, które chcesz przechowywać w bazie danych. Na przykład, jeśli projektujesz bazę danych dla firmy, encje mogą obejmować klientów, produkty i zamówienia.
+
+2. **Określ atrybuty:** Atrybuty to cechy lub właściwości encji. Dla klientów mogą to być imię, nazwisko, adres, itp.
+
+3. **Określ związki:** Związki określają, jak encje są ze sobą powiązane. Na przykład, klient może mieć wiele zamówień, co oznacza związek "jeden do wielu" między klientem a zamówieniem.
+
+4. **Normalizuj:** Sprawdź, czy baza danych jest dobrze zorganizowana, aby uniknąć powtórzeń i zapewnić spójność danych.
+
+Te proste zasady pomagają w projektowaniu czytelnych i funkcjonalnych diagramów oraz modeli, co ułatwia zrozumienie i implementację systemów informatycznych.
+
+### Proszę scharakteryzować strukturę języka UML.
+
+Język UML (Unified Modeling Language) jest standardowym językiem notacji graficznej stosowanym do modelowania i dokumentowania systemów informatycznych oraz procesów biznesowych. Jego struktura obejmuje kilka głównych elementów, które pozwalają na reprezentację różnych aspektów systemu. Oto podstawowe składniki struktury języka UML:
+
+1. **Diagramy:**
+   - UML definiuje wiele rodzajów diagramów, z których każdy służy do modelowania określonych aspektów systemu. Najpopularniejsze diagramy UML to diagramy klas, diagramy przypadków użycia, diagramy sekwencji, diagramy aktywności, diagramy stanów, diagramy komponentów i diagramy wdrożeń.
+
+2. **Elementy diagramów:**
+   - Każdy diagram UML składa się z różnych elementów graficznych, takich jak klasy, interfejsy, przypadki użycia, aktorzy, obiekty, komponenty, artefakty, relacje, a także różne rodzaje linii i strzałek reprezentujących związki między elementami.
+
+3. **Klasy i struktury:**
+   - Klasy i struktury są podstawowymi elementami reprezentującymi obiekty w systemie. Klasy są reprezentowane w diagramach klas, a struktury w diagramach struktur.
+
+4. **Relacje:**
+   - Relacje między elementami UML określają powiązania i zależności między nimi. Na przykład, relacja dziedziczenia między klasami, relacja asocjacji między klasami, relacja agregacji czy kompozycji.
+
+5. **Atrybuty i metody:**
+   - Klasy w UML mogą posiadać atrybuty (cechy) i metody (zachowania). Atrybuty są reprezentowane za pomocą nazw i typów danych, a metody za pomocą nazw, parametrów i typów zwracanych.
+
+6. **Przypadki użycia i aktorzy:**
+   - Przypadki użycia reprezentują funkcjonalności systemu lub jego części z perspektywy użytkownika. Aktorzy to osoby, systemy zewnętrzne lub inne systemy korzystające z funkcji systemu.
+
+7. **Diagramy interakcji:**
+   - Diagramy interakcji, takie jak diagramy sekwencji i diagramy komunikacji, służą do modelowania interakcji między obiektami w systemie w określonym scenariuszu lub procesie.
+
+8. **Diagramy stanów:**
+   - Diagramy stanów opisują różne stany, przez które może przechodzić obiekt w systemie oraz przejścia między nimi w odpowiedzi na zdarzenia.
+
+9. **Diagramy komponentów i wdrożeń:**
+   - Diagramy komponentów reprezentują fizyczne lub logiczne komponenty systemu oraz ich zależności. Diagramy wdrożeń pokazują sposób, w jaki komponenty są rozmieszczone i wdrażane na fizycznych środowiskach.
+
+Struktura języka UML jest elastyczna i umożliwia tworzenie różnorodnych diagramów, które mogą być używane w różnych fazach projektowania i rozwoju systemów informatycznych, począwszy od analizy i projektowania, aż po implementację i testowanie.
+
+### Obiektowe projektowanie systemów informatycznych.
+
+Obiektowe projektowanie systemów informatycznych (OOP - Object-Oriented Programming) to podejście do tworzenia oprogramowania, które opiera się na koncepcji obiektów i ich wzajemnych interakcji. OOP umożliwia bardziej zorganizowane, elastyczne i skalowalne tworzenie systemów poprzez grupowanie danych i funkcji w logiczne jednostki zwane obiektami. Oto kilka kluczowych aspektów obiektowego projektowania systemów informatycznych:
+
+1. **Klasy i obiekty:**
+   - Klasy są szablonami, które definiują właściwości i zachowania obiektów. Obiekty są instancjami klas, które posiadają konkretne wartości atrybutów i mogą wykonywać określone operacje.
+
+2. **Enkapsulacja:**
+   - Enkapsulacja polega na ukrywaniu wewnętrznych szczegółów implementacji obiektów i udostępnianiu jedynie interfejsu, który umożliwia manipulację nimi. To pozwala na tworzenie modułowego, łatwo rozszerzalnego i bezpiecznego kodu.
+
+3. **Dziedziczenie:**
+   - Dziedziczenie pozwala na tworzenie nowych klas na podstawie istniejących klas, przyjmując ich właściwości i metody oraz dodając nowe. Dzięki temu można unikać powtarzania kodu i budować hierarchie klas, które odzwierciedlają strukturę problemu.
+
+4. **Polimorfizm:**
+   - Polimorfizm pozwala na przypisywanie różnych znaczeń do tych samych operacji w różnych kontekstach. Dzięki temu można stosować te same metody do różnych typów danych, co prowadzi do elastyczności i ułatwia rozbudowę systemu.
+
+5. **Związki i asocjacje:**
+   - Obiekty mogą mieć relacje między sobą, które są reprezentowane za pomocą związków i asocjacji. To umożliwia modelowanie złożonych struktur danych i wzajemnych powiązań między obiektami.
+
+6. **Wzorce projektowe:**
+   - Wzorce projektowe to sprawdzone rozwiązania problemów, które mogą być stosowane w różnych kontekstach projektowych. Korzystanie z wzorców projektowych pomaga unikać błędów projektowych i zwiększa efektywność procesu projektowania.
+
+7. **Testowanie i refaktoryzacja:**
+   - Obiektowe projektowanie zachęca do tworzenia testów jednostkowych oraz do refaktoryzacji kodu, czyli jego restrukturyzacji w celu poprawy jego czytelności, wydajności i elastyczności.
+
+8. **Iteracyjny proces projektowania:**
+   - Proces projektowania systemów informatycznych zwykle przebiega iteracyjnie, z cyklami analizy, projektowania, implementacji i testowania. To pozwala na ciągłe doskonalenie systemu i dostosowywanie go do zmieniających się wymagań.
+
+Obiektowe projektowanie systemów informatycznych stwarza możliwość tworzenia bardziej modułowego, elastycznego i łatwego w utrzymaniu oprogramowania. Poprzez wykorzystanie koncepcji obiektowych można zwiększyć czytelność kodu, zmniejszyć jego złożoność oraz ułatwić zarządzanie projektem.
+
+### Proszę wymienić i opisać etapy klasycznego cyklu projektowania systemów informatycznych.
+1. **Analiza wymagań:**
+   - Pierwszym etapem jest analiza potrzeb i wymagań systemu. W tym etapie identyfikuje się cele projektu, określa się funkcje, jakie ma spełniać system oraz zbiera się wymagania od użytkowników końcowych.
+
+2. **Projektowanie:**
+   - Na podstawie zebranych wymagań następuje etap projektowania systemu. Projektowanie obejmuje tworzenie architektury systemu, projektowanie interfejsów użytkownika, modelowanie baz danych oraz określanie struktury i zachowań systemu.
+
+3. **Implementacja:**
+   - W tym etapie programiści przekształcają projekt w kod komputerowy. Piszą, testują i debugują kod, tworząc oprogramowanie zgodnie z ustalonymi specyfikacjami i wymaganiami.
+
+4. **Testowanie:**
+   - Po zakończeniu implementacji następuje etap testowania oprogramowania. Testy mają na celu sprawdzenie, czy system działa zgodnie z oczekiwaniami, czy nie ma w nim błędów, a także czy spełnia wymagania użytkowników.
+
+5. **Wdrożenie:**
+   - Po zakończeniu testów i uzyskaniu akceptacji od klienta system jest wdrażany, czyli uruchamiany w środowisku produkcyjnym. Wdrażanie może obejmować instalację oprogramowania, szkolenie użytkowników oraz przeprowadzenie migracji danych.
+
+6. **Utrzymanie:**
+   - Ostatni etap to utrzymanie systemu, czyli zapewnienie jego ciągłej pracy, wsparcie użytkowników, naprawa błędów, aktualizacje oprogramowania oraz ewentualne dostosowanie do zmieniających się potrzeb i wymagań użytkowników.
+
+Cykl życia oprogramowania może mieć różne warianty i modyfikacje, w zależności od specyfiki projektu i preferencji zespołu programistycznego. Ważne jest jednak, aby każdy etap był starannie przemyślany i wykonany zgodnie z ustalonymi procedurami, co zapewnia jakość i skuteczność finalnego produktu.
+
+### Proszę omówić i porównać architektury systemów komputerowych typu peer to peer oraz klient-serwer.
+
+Architektura typu peer-to-peer (P2P) oraz klient-serwer są dwoma głównymi modelami architektonicznymi wykorzystywanymi w systemach komputerowych. Oto omówienie i porównanie obu tych architektur:
+
+#### Architektura typu Peer-to-Peer (P2P):
+
+1. **Charakterystyka:**
+   - W architekturze P2P każdy komputer w sieci, zwany węzłem, może pełnić zarówno rolę klienta, jak i serwera. Węzły są połączone bezpośrednio między sobą, co umożliwia bezpośrednią komunikację i wymianę danych między nimi.
+
+2. **Brak centralnego serwera:**
+   - W architekturze P2P nie ma centralnego serwera zarządzającego ruchem ani dystrybucją danych. Każdy węzeł jest równorzędny i ma taką samą rolę w sieci.
+
+3. **Elastyczność i skalowalność:**
+   - Architektura P2P jest elastyczna i łatwo skalowalna, ponieważ nowe węzły mogą być łatwo dodawane do sieci, a usługi są dystrybuowane między wszystkimi węzłami.
+
+4. **Odporność na awarie:**
+   - Dzięki brakowi centralnego punktu awaria jednego węzła nie powoduje całkowitej awarii systemu. Pozostałe węzły mogą nadal funkcjonować i wymieniać się informacjami.
+
+5. **Przykład zastosowania:**
+   - Sieci P2P są często wykorzystywane do udostępniania plików, komunikacji bezpośredniej między użytkownikami (np. VoIP), a także do obliczeń rozproszonych.
+
+#### Architektura typu Klient-Serwer:
+
+1. **Charakterystyka:**
+   - W architekturze klient-serwer komunikacja odbywa się między klientem (aplikacją kliencką) a serwerem (aplikacją serwerową). Klient wysyła żądania do serwera, a serwer udziela odpowiedzi.
+
+2. **Centralny serwer:**
+   - Architektura klient-serwer opiera się na istnieniu centralnego serwera, który zarządza zasobami i usługami oraz odpowiada na żądania klientów.
+
+3. **Zależność od serwera:**
+   - Klienci nie mogą bezpośrednio komunikować się między sobą w architekturze klient-serwer. Wszelkie komunikaty muszą być przekazywane przez serwer, co może prowadzić do obciążenia sieci w przypadku dużego ruchu.
+
+4. **Prostota zarządzania:**
+   - Architektura klient-serwer jest łatwa w zarządzaniu, ponieważ wszystkie zasoby i usługi znajdują się w jednym miejscu - na serwerze. Jest to przydatne w przypadku kontroli dostępu i monitorowania.
+
+5. **Przykład zastosowania:**
+   - Architektura klient-serwer jest szeroko stosowana w różnych aplikacjach, takich jak strony internetowe (serwer WWW), poczta elektroniczna (serwer poczty), bazy danych (serwer baz danych) czy też gry sieciowe (serwer gier).
+
+#### Porównanie:
+
+- **Kontrola:** W architekturze klient-serwer kontrola nad zasobami i usługami leży w rękach serwera, podczas gdy w architekturze P2P każdy węzeł ma kontrolę nad swoimi zasobami.
+  
+- **Skalowalność:** Architektura P2P jest bardziej elastyczna i skalowalna, podczas gdy architektura klient-serwer może być bardziej ograniczona przez zdolność serwera do obsługi dużej liczby klientów.
+  
+- **Bezpieczeństwo:** Architektura klient-serwer może oferować lepsze bezpieczeństwo, ponieważ serwer może kontrolować dostęp do danych. W architekturze P2P bezpieczeństwo może być bardziej skomplikowane ze względu na brak centralnej kontroli.
+
+Ostatecznie wybór między architekturą klient-serwer a P2P zależy od konkretnych wymagań i charakterystyki projektowanego systemu oraz preferencji dotyczących elastyczności, kontroli i skalowalności.
