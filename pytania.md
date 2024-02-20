@@ -1,4 +1,4 @@
-## Podstawowe typy i struktury danych w językach programowania.
+## Proszę porównać koncepcje programowania skryptowego i obiektowego.
 
 1.  Programowanie skryptowe i obiektowe to dwa różne podejścia do tworzenia oprogramowania, z różnicami w filozofii projektowej, strukturze kodu i sposobie rozwiązywania problemów. Poniżej znajdziesz porównanie obu podejść:
     - Programowanie skryptowe:
@@ -13,34 +13,29 @@
         - Języki: Języki obiektowe to m.in. Java, C++, C#, Python (umożliwiający zarówno programowanie obiektowe, jak i skryptowe), Ruby.
 	Podsumowując, programowanie skryptowe jest często stosowane do szybkiego prototypowania, ma 	mniejsze wymagania dotyczące struktury i składni, podczas gdy programowanie obiektowe stawia na 	organizację kodu wokół obiektów, co ułatwia zarządzanie większymi projektami i zapewnia większą 	modularność i skalowalność. Oba podejścia mają swoje zastosowania w zależności od potrzeb 	projektu.
 
-## Proszę porównać koncepcje programowania skryptowego i obiektowego.
+## 
 
-2.  Typy danych i struktury danych są fundamentalnymi elementami w językach programowania, które umożliwiają manipulację i organizację danych w programach. Poniżej przedstawiam podstawowe typy danych i struktury danych, które występują w większości języków programowania:
+Typy i struktury danych w językach programowania są fundamentalnymi konceptami, które umożliwiają programistom przechowywanie, manipulowanie i przetwarzanie danych w programach. Oto kilka podstawowych typów i struktur danych, które są powszechnie stosowane w różnych językach programowania:
 
-    - Typy danych podstawowe:
-    
-        Integer (liczba całkowita): Reprezentuje liczby całkowite, np. 1, 100, -5.
-        Float (liczba zmiennoprzecinkowa): Reprezentuje liczby zmiennoprzecinkowe, np. 3.14, 2.5, -0.001.
-        String (łańcuch znaków): Reprezentuje sekwencje znaków, np. "hello", "world", "abc123".
-        Boolean (wartość logiczna): Reprezentuje wartość logiczną True (prawda) lub False (fałsz).
-        Char (znak): Reprezentuje pojedynczy znak, np. 'a', 'X', '$'.
+1. **Typy proste:**
+   - **Liczby całkowite (integers):** Reprezentują liczby całkowite bez części dziesiętnej, np. -3, 0, 42.
+   - **Liczby zmiennoprzecinkowe (floating-point numbers):** Reprezentują liczby z częścią dziesiętną, np. 3.14, -0.5, 2.718.
+   - **Znaki (characters):** Reprezentują pojedyncze znaki, np. 'a', 'Z', '?'.
+   - **Logiczne (boolean):** Reprezentują wartości logiczne True lub False.
 
-    - Typy danych złożone:
+2. **Struktury danych:**
+   - **Tablice (arrays):** Kolekcje elementów o stałej wielkości, w której każdy element jest indeksowany za pomocą liczby całkowitej, np. tablica liczb całkowitych [1, 2, 3, 4].
+   - **Listy (lists):** Kolekcje elementów, które mogą zmieniać rozmiar dynamicznie, pozwalając na dodawanie, usuwanie i modyfikowanie elementów w trakcie działania programu, np. lista liczb całkowitych [1, 2, 3, 4].
+   - **Słowniki (dictionaries):** Struktury danych, które przechowują pary klucz-wartość, gdzie klucze są unikalne, np. {'imie': 'Jan', 'wiek': 30}.
+   - **Krotki (tuples):** Podobne do list, ale są niemutowalne, co oznacza, że nie można ich modyfikować po ich utworzeniu, np. krotka (1, 2, 3, 4).
+   - **Zbiory (sets):** Kolekcje unikalnych elementów, które nie zachowują kolejności, np. zbiór {1, 2, 3, 4}.
 
-        List (lista): Kolekcja elementów, które mogą być różnych typów i przechowywane są w określonej kolejności.
-        Tuple (krotka): Podobna do listy, ale elementy są niemodyfikowalne (immutable), a jej rozmiar jest stały.
-        Dictionary (słownik): Skojarzenie kluczy z wartościami, umożliwiające szybkie wyszukiwanie po kluczu.
-        Set (zbiór): Kolekcja unikalnych elementów, w której nie ma duplikatów.
+3. **Struktury danych złożone:**
+   - **Drzewa (trees):** Hierarchiczne struktury danych, w których każdy element ma jednego nadrzędnego (root) i zero lub więcej podrzędnych (children), np. drzewo genealogiczne.
+   - **Grafy (graphs):** Struktury składające się z wierzchołków połączonych krawędziami, które mogą mieć różne relacje między sobą, np. grafy sieci społecznościowych.
+   - **Stosy (stacks) i kolejki (queues):** Struktury danych służące do przechowywania i manipulowania elementami w kolejności LIFO (Last In, First Out) lub FIFO (First In, First Out), odpowiednio.
 
-    - Struktury danych:
-
-        Tablica (array): Uporządkowany zestaw elementów tego samego typu.
-        Stos (stack): Struktura danych LIFO (Last-In-First-Out), w której ostatni element dodany jest pierwszy do usunięcia.
-        Kolejka (queue): Struktura danych FIFO (First-In-First-Out), w której pierwszy element dodany jest pierwszy do usunięcia.
-        Drzewo (tree): Hierarchiczna struktura danych, w której każdy element może mieć kilka potomków.
-        Graf (graph): Zbiór wierzchołków połączonych krawędziami, które mogą mieć różne relacje.
-
-Te typy danych i struktury danych są wykorzystywane do przechowywania, organizowania i manipulowania danymi w programach komputerowych. Każdy język programowania może mieć swoje własne implementacje tych struktur, choć podstawowe zasady działania są zazwyczaj podobne.
+Te są tylko podstawowe przykłady typów i struktur danych, które są powszechnie stosowane w różnych językach programowania. Istnieje wiele innych zaawansowanych struktur danych, które są wykorzystywane w zależności od potrzeb i specyfiki aplikacji.
 
 ## Sposoby przechowywania i kodowania informacji w systemie komputerowym.
 ### Co autor miał na myśli?
